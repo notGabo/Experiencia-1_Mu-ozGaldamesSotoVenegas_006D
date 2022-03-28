@@ -4,18 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- css y js nativos-->
-    <link rel="stylesheet" type="text/css" href="utilidades/style.css">
-    <link rel="stylesheet" type="text/js" href="utilidades/animation.js">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="image/png" href="./img/logo.png">
     <title>Community Plant</title>
   </head>
 
+   <!-- Comienzo del body -->
   <body style="background-color:#ffffff">
 
     <!-- Barra de navegacion superior -->
-    
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1D8348">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"> 
@@ -43,20 +43,168 @@
         </div>
       </div>
     </nav>
-    <div class="text-center" style="margin-top: 0.5%; margin-bottom: 0.5%;">
-        <img src="img/plantas-oficina.jpg" class="img-fluid" alt="plantas oficina">
-        <h1 class="ml11">
-            <span class="text-wrapper">
-              <span class="line line1"></span>
-              <span class="letters">Hello Goodbye</span>
-            </span>
-        </h1>
-          
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+   <!-- Carrusel index -->
+    <div align="center" id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./img/2planta1920x720.jpg" class="d-block" alt="planta oficina 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Todas tus plantas y flores preferidas</h5>
+            <p>A un precio razonable</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./img/3planta1920x720.jpg" class="d-block" alt="planta oficina 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="textoNegro">Variedades y colores</h5>
+            <p class="textoNegro">Para tu ambiente y espacio personal</p>
+          </div>
+        </div>
+        <div class="carousel-item data-bs-interval="3000">
+          <img src="./img/4planta1920x720.jpg" class="d-block" alt="planta oficina 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¿Deseas ver nuestros productos?</h5>
+            <p>Haz click  <a style="color:#FFFFFF" href="galeriaFotos.html">aqui</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     
+ <!-- Frases celebres -->
+    <div style="margin-top: 2%; margin-bottom: 5%;">
+    <figure class="container text-start">
+      <blockquote class="blockquote">
+        <p>Siempre hay flores para el que desea verlas.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Henri Matisse (1869-1954) <cite title="Source Title">pintor francés.</cite>
+      </figcaption>
+    </figure>
+    <figure class="container text-center">
+      <blockquote class="blockquote">
+        <p>Si supiera que el mundo se acaba mañana, yo, hoy todavía, plantaría un árbol.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Martin Luther King (1929-1968) <cite title="Source Title">pastor estadounidense.</cite>
+      </figcaption>
+    </figure>
 
-<!-- -->
+    <figure class="container text-end">
+      <blockquote class="blockquote">
+        <p>El amor por la jardinería es una semilla que una vez sembrada nunca muere.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Gertrude Jekyll (1843-1932) <cite title="Source Title">horticultora y diseñadora de jardines, inglesa.</cite>
+      </figcaption>
+    </figure>
+  </div>
+
+ <!-- Informacion Cards de la pagina --> 
+  <div style="margin-top: 2%;">
+ <div class="card mb-5" style="max-width: 540px; margin-left: 5%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/PlantaCard2.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Para escritorios</h5>
+        <p class="card-text">Perfectas para tu espacio de trabajo y brindarte un aire fresco en tu espacios de trabajo</p>
+        <p class="card-text"><small class="text-muted"><a href="contactanos.html" style="color: #2b2b2ba8;">¡Contactanos aqui!</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-5" style="max-width: 540px; margin-left: auto; margin-right: auto;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/PlantaCard3.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Espacios exteriores</h5>
+        <p class="card-text">Plantas perfectas para los donde mas compartes con tus amigos o fiestas, no requieren algun tipo de cuidado intenso ya que se adaptan facil al ambiente</p>
+        <p class="card-text"><small class="text-muted"><a href="contactanos.html" style="color: #2b2b2ba8;">¡Contactanos aqui!</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="d-flex justify-content-end" style="margin-right: 5%;">
+ <div class="card mb-5 " style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/PlantaCard1.jpg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Espacios interiores</h5>
+        <p class="card-text">Plantas perfectas para tu espacio personal, para acompañar tus muebles y a tu familia, alegran tu ambiente y tu dia a dia</p>
+        <p class="card-text"><small class="text-muted"><a href="contactanos.html" style="color: #2b2b2ba8;">¡Contactanos aqui!</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+ <!-- Footer de la pagina --> 
+  <div style="background-color: #76e0a2;">
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-md">
+        <center><a href="#"><img src="./img/logo.png" height="50px" alt="Community Plant"></a>
+        <small><li class="d-block  text-muted">©2021 Derechos reservados</li></small>
+        <small><li class="d-block  text-muted">Duoc UC Sede Maipú</li></small>
+        <small><li class="d-block  text-muted">Ingenieria informatica</li></small></center>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Equipo (Github)</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://github.com/Sfreimx">Alfredo Galdames</a></li>
+          <li><a class="text-muted" href="https://github.com/Sfreimx">Fabian Muñoz</a></li>
+          <li><a class="text-muted" href="https://github.com/notGabo">Gabriel Soto</a></li>
+          <li><a class="text-muted" href="https://github.com/je4n83">Jean Venegas</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5><img src="./img/iconoInsta.png" width="30px" alt="iconoInsta"> Nuestras redes</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://www.instagram.com/_.langley/">@_.langley</a></li>
+          <li><a class="text-muted" href="https://www.instagram.com/_fabianski_ff/">@_fabianski_ff/</a></li>
+          <li><a class="text-muted" href="https://www.instagram.com/naflep/">@naflep</a></li>
+          <li><a class="text-muted" href="https://www.instagram.com/44jean__/">@44jean__</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Acerca de</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://github.com/notGabo/Experiencia-1_Mu-ozGaldamesSotoVenegas_006D">Link repositorio</a></li>
+          <li><a class="text-muted" href="https://github.com/edobazz">Github Profesor</a></li>
+          <li><a class="text-muted" href="https://www.duoc.cl/">Duoc UC</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Fin de la pagina -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
